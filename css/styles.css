@@ -9624,7 +9624,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #eff3f9 !important;
+  background-color: rgb(236 199 245 / 38%) !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -16989,7 +16989,7 @@ button.bg-danger-soft:focus {
 }
 
 .text-primary {
-  color: #0061f2 !important;
+  color: #7406d6 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -17037,7 +17037,7 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light, .page-header-dark .btn-link {
-  color: #eff3f9 !important;
+    color: #f8eafb !important;
 }
 
 a.text-light:hover, .page-header-dark a.btn-link:hover, a.text-light:focus, .page-header-dark a.btn-link:focus {
