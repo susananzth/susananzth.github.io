@@ -19622,20 +19622,12 @@ body {
   }
 }
 .navbar-marketing.navbar-dark.navbar-scrolled {
-  background-color: #1f2d41 !important;
-}
-
-.navbar-marketing.navbar-light.navbar-scrolled {
-  background-color: #eff3f9 !important;
+  background-color: #6e22b3  !important;
 }
 
 @media (max-width: 991.98px) {
   .navbar-marketing.bg-transparent.navbar-dark {
-    background-color: #1f2d41 !important;
-  }
-
-  .navbar-marketing.bg-transparent.navbar-light {
-    background-color: #eff3f9 !important;
+    background-color: #6e22b3  !important;
   }
   .animated--fade-in,
 .animated--fade-in-up {
