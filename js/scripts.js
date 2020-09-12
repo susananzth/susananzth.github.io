@@ -24,6 +24,38 @@
         target: "#stickyNav",
         offset: 82
     });
+    /*!
+        * Start Bootstrap - Grayscale v6.0.2 (https://startbootstrap.com/themes/grayscale)
+        * Copyright 2013-2020 Start Bootstrap
+        * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+        */
+    // Smooth scrolling using jQuery easing
+    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+        if (
+            location.pathname.replace(/^\//, "") ==
+                this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+        ) {
+            var target = $(this.hash);
+            target = target.length
+                ? target
+                : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top - 70,
+                    },
+                    1000,
+                    "easeInOutExpo"
+                );
+                return false;
+            }
+        }
+    });
+    // Closes responsive menu when a scroll trigger link is clicked
+    $(".js-scroll-trigger").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
 
     // Scrolls to an offset anchor when a sticky nav link is clicked
     $('.nav-sticky a.nav-link[href*="#"]:not([href="#"])').click(function() {
