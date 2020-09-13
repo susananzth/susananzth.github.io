@@ -21,7 +21,7 @@
 
     // Activate Bootstrap scrollspy for the sticky nav component
     $("body").scrollspy({
-        target: "#stickyNav",
+        target: "#nav",
         offset: 82
     });
     /*!

@@ -27,6 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@300&family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <!-- Estilos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/MyStyles.css">
@@ -37,7 +38,7 @@
               <main>
                   <nav id="nav" class="navbar fixed-top navbar-marketing navbar-expand-lg bg-transparent navbar-dark">
                       <div class="container">
-                          <a class="navbar-brand text-light" href="#">
+                          <a class="navbar-brand text-light" href="https://susananzth.github.io/">
                               <img src="img\favicon.png" class="d-inline-block align-top" alt="susananzth" loading="lazy">
                             </a>
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +63,7 @@
                                   <div class="col-lg-5">
                                       <h1 class="page-header-title">Susana's Portfolio</h1>
                                       <p class="page-header-text mb-5">Mi portafolio</p>
-                                      <a class="btn btn-primary btn-marketing rounded-pill js-scroll-trigger" href="#about">Más información<i class="fas fa-arrow-down ml-1"></i></a>
+                                      <a class="btn btn-primary btn-marketing js-scroll-trigger" href="#about">Más información<i class="fas fa-arrow-down ml-1"></i></a>
                                   </div>
                                   <div class="col-lg-5 d-none d-lg-block"><img class="img-fluid" src="img\logo-2.png" /></div>
                               </div>
@@ -79,11 +80,12 @@
                               <p class="lead text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis varius suscipit. Ut eu malesuada diam. Proin lacinia
                                 ipsum eget porttitor congue. Praesent sit amet convallis est. Fusce sem lacus, consequat eget elementum nec, semper quis ligula. Sed mi felis,
                                 mollis semper accumsan id, efficitur in purus. Phasellus vel aliquet diam.</p>
+                                <a class="btn btn-primary btn-marketing js-scroll-trigger" href="#about">Más acerca de mi<i class="fas fa-arrow-right ml-1"></i></a>
                           </div>
                           <h2 class="text-center mb-5">Servicios que ofrezco</h2>
                           <div class="row mb-n10 z-1">
-                              <div class="col-lg-6 mb-5">
-                                  <div class="card h-100">
+                              <div class="col-lg-6 mb-5" data-aos="fade-up">
+                                  <div class="card h-100 lift">
                                       <div class="card-body p-5 text-center">
                                           <div class="icon-stack icon-stack-xl bg-success-soft text-success mb-4"><i class="fa fa-shield-alt"></i></div>
                                           <h5 class="mb-3">Eficiencia y seguridad</h5>
@@ -91,8 +93,8 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="col-lg-6 mb-5">
-                                  <div class="card h-100">
+                              <div class="col-lg-6 mb-5" data-aos="fade-up">
+                                  <div class="card h-100 lift">
                                       <div class="card-body p-5 text-center">
                                           <div class="icon-stack icon-stack-xl bg-secondary-soft text-secondary text-center mb-4"><i class="fa fa-laptop-code"></i></div>
                                           <h5 class="mb-3">Diseño responsive</h5>
@@ -100,8 +102,8 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="col-lg-6 mb-5">
-                                  <div class="card h-100">
+                              <div class="col-lg-6 mb-5" data-aos="fade-up">
+                                  <div class="card h-100 lift">
                                       <div class="card-body p-5 text-center">
                                           <div class="icon-stack icon-stack-xl bg-primary-soft text-primary mb-4"><i class="fa fa-grin-stars"></i></div>
                                           <h5 class="mb-3">Dinámica</h5>
@@ -109,8 +111,8 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="col-lg-6 mb-5">
-                                  <div class="card h-100">
+                              <div class="col-lg-6 mb-5" data-aos="fade-up">
+                                  <div class="card h-100 lift">
                                       <div class="card-body p-5 text-center">
                                           <div class="icon-stack icon-stack-xl bg-warning-soft text-warning mb-4"><i class="fa fa-tachometer-alt"></i></div>
                                           <h5 class="mb-3">Posicionamiento SEO</h5>
@@ -118,8 +120,8 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="col-lg-12">
-                                  <div class="card h-100">
+                              <div class="col-lg-12" data-aos="fade-up">
+                                  <div class="card h-100 lift">
                                       <div class="card-body p-5 text-center">
                                           <div class="icon-stack icon-stack-xl bg-danger-soft text-danger mb-4"><i class="fa fa-heart"></i></div>
                                           <h5 class="mb-3">Hecho com amor</h5>
@@ -133,7 +135,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
                       </div>
                   </section>
-                  <section class="bg-light py-10">
+                  <section id="company" class="bg-light py-10">
                       <div class="container">
                           <div class="text-right mb-5"><h3>Empresas con que he trabajado</h3></div>
                           <div class="row brands text-secondary align-items-center">
@@ -158,22 +160,70 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
                       </div>
                   </section>
-                  <section class="bg-white py-10">
+                  <section id="action" class="bg-white py-10">
                       <div class="container">
                           <div class="row align-items-center">
                               <div class="col-lg-6 mb-4 mb-lg-0">
                                   <h4 class="text-primary">¿Listo para comenzar a trabajar?</h4>
                                   <p class="lead mb-0">Escribeme!</p>
                               </div>
-                              <div class="col-lg-6 text-lg-right"><a class="btn btn-marketing btn-primary rounded-pill mr-3" href="#!">Contáctame</a></div>
+                              <div class="col-lg-6 text-lg-right"><a class="btn btn-marketing btn-primary mr-3" href="#!">Contáctame</a></div>
+                          </div>
+                      </div>}
+                      <div class="svg-border-angled text-primary-soft">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                      </div>
+                  </section>
+                  <section id="portfolio" class="bg-primary py-10">
+                      <div class="container">
+                          <h2 class="text-center mb-5">Mis trabajos</h2>
+                          <div class="card-columns card-columns-portfolio">
+                              <a class="card card-portfolio" href="#!">
+                                  <img class="card-img-top" src="https://source.unsplash.com/jWQj5Wjepuk/400x300" alt="..." />
+                                  <div class="card-body"><div class="card-title">WIN rideshare</div></div>
+                              </a>
+                              <a class="card card-portfolio" href="#!">
+                                  <img class="card-img-top" src="https://source.unsplash.com/Ecnx13MEPK0/400x500" alt="..." />
+                                  <div class="card-body"><div class="card-title">Acciones WIN</div></div>
+                              </a>
+                              <a class="card card-portfolio" href="#!">
+                                  <img class="card-img-top" src="https://source.unsplash.com/cuTcfqsES6o/400x500" alt="..." />
+                                  <div class="card-body"><div class="card-title">LPinero</div></div>
+                              </a>
+                              <a class="card card-portfolio" href="#!">
+                                  <img class="card-img-top" src="https://source.unsplash.com/n3sqjJzZiBM/400x300" alt="..." />
+                                  <div class="card-body"><div class="card-title">DMontesDeOca</div></div>
+                              </a>
+                              <a class="card card-portfolio" href="#!">
+                                  <img class="card-img-top" src="https://source.unsplash.com/eUCy1jb_B7I/400x400" alt="..." />
+                                  <div class="card-body"><div class="card-title">Dev Solitions</div></div>
+                              </a>
+
+                              <a class="card card-portfolio" href="#!">
+                                  <img class="card-img-top" src="https://source.unsplash.com/jipR1oTCO7U/400x400" alt="..." />
+                                  <div class="card-body"><div class="card-title">FVargas</div></div>
+                              </a>
+                          </div>
+                          <a class="btn btn-primary btn-marketing js-scroll-trigger" href="#about">Más trabajos<i class="fas fa-arrow-right ml-1"></i></a>
+                      </div>
+                      <div class="svg-border-angled text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
+                      </div>
+                  </section>
+                  <section id="action" class="bg-white py-10">
+                      <div class="container">
+                          <p>PHP</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                          </div>
+                          <p>PHP</p>
+                          <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                           </div>
                       </div>
                       <div class="svg-border-angled text-dark">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="currentColor"><polygon points="0,100 100,0 100,100"></polygon></svg>
                       </div>
-                  </section>
-                  <section id="portfolio">
-
                   </section>
               </main>
           </div>
@@ -218,5 +268,13 @@
       <!-- Third party plugin JS-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
       <script type="text/javascript" src="js\scripts.js" ></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init({
+              disable: 'mobile',
+              duration: 600,
+              once: true
+          });
+      </script>
   </body>
 </html>

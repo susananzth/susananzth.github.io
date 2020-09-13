@@ -3131,7 +3131,6 @@ textarea.form-control {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.35rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -6623,6 +6622,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
+  border-bottom: 0.25rem solid #faf6fb;
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
@@ -6653,7 +6653,6 @@ input[type=button].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 0 solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.35rem;
 }
 .card > hr {
   margin-right: 0;
@@ -6745,8 +6744,7 @@ input[type=button].btn-block {
   width: 100%;
 }
 
-.card-img,
-.card-img-top {
+.card-img {
   border-top-left-radius: 0.35rem;
   border-top-right-radius: 0.35rem;
 }
@@ -7981,7 +7979,6 @@ a.badge-danger-soft:focus, a.badge-danger-soft.focus {
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e3e6ec;
-  border-radius: 0.35rem;
 }
 
 .progress-bar {
@@ -7996,7 +7993,7 @@ a.badge-danger-soft:focus, a.badge-danger-soft.focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #0061f2;
+  background-color: #6e22b3;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
@@ -9561,7 +9558,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #0061f2 !important;
+  background-color: #e7d9fb  !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9861,7 +9858,7 @@ button.bg-pink-soft:focus {
 }
 
 .bg-primary-soft {
-  background-color: #d4c2ef !important;
+  background-color: #e7d9fb !important;
 }
 
 a.bg-primary-soft:hover, a.bg-primary-soft:focus,
@@ -17226,7 +17223,7 @@ a.text-pink-soft:hover, a.text-pink-soft:focus {
 }
 
 .text-primary-soft {
-  color: #bfd6f8 !important;
+  color: #e7d9fb !important;
 }
 
 a.text-primary-soft:hover, a.text-primary-soft:focus {
