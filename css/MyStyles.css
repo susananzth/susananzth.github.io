@@ -15,3 +15,6 @@
 #layoutDefault #layoutDefault_footer {
   min-width: 0;
 }
+.progress {
+  background-color: #dcd9dd;
+}
