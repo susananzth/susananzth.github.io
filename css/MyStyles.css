@@ -1,5 +1,5 @@
 
-#layoutDefault {
+#root {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -7,12 +7,12 @@
           flex-direction: column;
   min-height: 100vh;
 }
-#layoutDefault #layoutDefault_content {
+#root #root_content {
   min-width: 0;
   -webkit-box-flex: 1;
           flex-grow: 1;
 }
-#layoutDefault #layoutDefault_footer {
+#root #root_footer {
   min-width: 0;
 }
 .progress {
