@@ -1,41 +1,137 @@
 html body {
   display: block;
 }
+
 .btn-primary {
   --bs-btn-color: var(--bs-white);
 }
+
 .icon-list-social .icon-list-social-link {
   font-size: 1.25rem;
   margin-right: 0.5rem;
 }
+
 .icon-stack {
   display: -webkit-inline-box;
   display: inline-flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   border-radius: 100%;
   height: 2rem;
   width: 2rem;
   font-size: 1rem;
   background-color: #eff3f9;
 }
+
 .icon-stack svg {
   height: 1rem;
   width: 1rem;
 }
+
 .icon-stack-xl {
   height: 5rem;
   width: 5rem;
   font-size: 1.75rem;
 }
+
 .icon-stack-xl svg {
   height: 1.75rem;
   width: 1.75rem;
 }
-#header > div {
+
+#header>div {
   position: relative;
   padding-top: 12rem;
   padding-bottom: 12rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: translateY(-100%);
+}
+
+.img-title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .img-title {
+  transform: translateY(0);
+}
+
+.brand-gallery {
+  justify-content: center;
+}
+
+.brand-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.brand-item:hover img {
+  transform: scale(1.1);
+}
+
+.brand-info {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+.brand-item:hover .brand-info {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
