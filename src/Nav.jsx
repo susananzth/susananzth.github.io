@@ -13,7 +13,7 @@ function Nav() {
                     <li className="nav-item">
                         <a className="nav-link" href="#">Inicio</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item d-none d-md-inline-block">
                         <a className="nav-link" href="#about">Sobre mi</a>
                     </li>
                     <li className="nav-item">
@@ -23,10 +23,12 @@ function Nav() {
                         <a className="nav-link" href="#">Blog</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Contacto</a>
+                        <a className="nav-link" href="#contact">Contacto</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Curriculum CV</a>
+                        <a className="nav-link">
+                            <span className="d-none d-lg-inline-block">Curriculum</span> CV
+                        </a>
                     </li>
                 </ul>
             </div>

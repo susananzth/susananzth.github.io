@@ -10,3 +10,11 @@
 .logo-footer.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+@media (max-width: 575.98px) {
+  .nav-link {
+    padding: 0.5rem;
+  }
+  .justify-c-sm-center {
+    justify-content: center !important;
+  }
+}

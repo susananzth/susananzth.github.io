@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './scss/styles.scss'
 import * as bootstrap from 'bootstrap'
+import './scss/styles.scss'
 import Nav from './Nav'
 import Footer from './Footer'
 import './index.css'

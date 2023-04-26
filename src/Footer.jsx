@@ -3,16 +3,16 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <div id="footer" className="container">
-            <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div className="col d-flex align-items-center">
+        <div className="container">
+            <footer className="d-md-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div className="col d-flex align-items-center justify-c-sm-center">
                     <a href="/" className="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
                         <img src={myLogo} className="logo" alt="Logo de susananzth" />
                     </a>
                     <span className="mb-3 mb-md-0 text-body-secondary">© 2023 Susana Piñero Rodríguez</span>
                 </div>
 
-                <ul className="nav col-auto justify-content-end">
+                <ul className="nav col-auto justify-content-end justify-c-sm-center">
                     <li className="nav-item">
                         <a className="nav-link" href="#">Inicio</a>
                     </li>
@@ -25,11 +25,13 @@ function Footer() {
                     <li className="nav-item">
                         <a className="nav-link" href="#">Blog</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link">Contacto</a>
+                    <li className="nav-item d-none d-md-inline-block">
+                        <a className="nav-link" href="#contact">Contacto</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">Curriculum CV</a>
+                        <a className="nav-link">
+                            <span className="d-none d-lg-inline-block">Curriculum</span> CV
+                        </a>
                     </li>
                 </ul>
             </footer>

@@ -1,57 +1,12 @@
 html body {
   display: block;
 }
-.text-white-50, .page-header-dark .page-header-text {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-.text-light, .page-header-dark .btn-link {
-  color: #f8eafb !important;
-}
-a.text-light:hover, .page-header-dark a.btn-link:hover, a.text-light:focus, .page-header-dark a.btn-link:focus {
-color: #b7c9e4 !important;
-}
-.text-dark, .page-header-light .btn-link {
-color: #1f2d41 !important;
-}
-a.text-dark:hover, .page-header-light a.btn-link:hover, a.text-dark:focus, .page-header-light a.btn-link:focus {
-color: #06090d !important;
+.btn-primary {
+  --bs-btn-color: var(--bs-white);
 }
 .icon-list-social .icon-list-social-link {
   font-size: 1.25rem;
   margin-right: 0.5rem;
-}
-.text-white-75, .page-header-dark .page-header-text a {
-  color: rgba(255, 255, 255, 0.75);
-}
-.page-header {
-  position: relative;
-  padding-top: 12rem;
-  padding-bottom: 8rem;
-}
-.page-header .page-header-content .page-header-title {
-  font-size: 3rem;
-}
-.page-header .page-header-content .page-header-text {
-  font-size: 1.15rem;
-}
-.page-header .page-header-content .page-header-text.small {
-  font-size: 0.9rem;
-}
-.page-header-dark {
-  color: #fff;
-  background-color: #1f2d41;
-}
-.page-header-dark .page-header-title {
-  color: #fff;
-}
-.page-header-light {
-  background-color: #eff3f9;
-}
-.page-header-light .page-header-text {
-  color: #687281;
-}
-.page-header-light .page-header-text a {
-  color: #485260;
 }
 .icon-stack {
   display: -webkit-inline-box;
@@ -78,4 +33,9 @@ color: #06090d !important;
 .icon-stack-xl svg {
   height: 1.75rem;
   width: 1.75rem;
+}
+#header > div {
+  position: relative;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
