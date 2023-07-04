@@ -16,17 +16,19 @@ function Nav() {
                     <li className="nav-item d-none d-md-inline-block">
                         <a className="nav-link" href="#about">Sobre mi</a>
                     </li>
+                    {/*
                     <li className="nav-item">
                         <a className="nav-link" href="#portfolio">Proyectos</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Blog</a>
                     </li>
+                    */}
                     <li className="nav-item">
                         <a className="nav-link" href="#contact">Contacto</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link">
+                        <a className="nav-link" href="https://www.linkedin.com/in/susananzth">
                             <span className="d-none d-lg-inline-block">Curriculum</span> CV
                         </a>
                     </li>
