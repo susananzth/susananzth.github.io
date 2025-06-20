@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import * as bootstrap from 'bootstrap'
 import './scss/styles.scss'
 import Nav from './Nav'
-import Footer from './Footer'
+import App from './App'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('nav')).render(
@@ -11,8 +11,8 @@ ReactDOM.createRoot(document.getElementById('nav')).render(
     <Nav />
   </React.StrictMode>,
 )
-ReactDOM.createRoot(document.getElementById('footer')).render(
+ReactDOM.createRoot(document.getElementById('app')).render(
   <React.StrictMode>
-    <Footer />
+    <App />
   </React.StrictMode>,
 )

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body, html {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  color: #22223b;
+}
+
+.main-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f3f4f6 0%, #e0e7ef 100%);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0.3rem;
+  }
+  section {
+    margin-bottom: 1.5rem;
+  }
+}

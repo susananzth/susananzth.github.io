@@ -1,0 +1,29 @@
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.project-card {
+  background: #f8fafc;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(80, 80, 120, 0.08);
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  min-width: 260px;
+  transition: transform 0.15s;
+}
+.project-card:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+.project-tech {
+  color: #6366f1;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+.project-links a {
+  margin-right: 1rem;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
